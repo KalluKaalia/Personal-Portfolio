@@ -1,52 +1,72 @@
-button{
-        font-style : 'minimal_monobold';
+body{
+        padding-left: 22%;
+        padding-top: 10%;
 }
 
-.linkstyle{
-        border: none;
-        background: none;
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        display: inline-block;
-        position: relative;
-        margin: 10px;
-        transition: color 0.3s ease; /* Smooth color transition */
-      }
-      
-.linkstyle:hover {
-        color: lightgrey;
-      }
-      
-      /* Add the underline effect */
+.speciallybuttonkeliye{
+    font-family: 'cutive_monoregular', sans-serif;
+    font-size: 16px;
+    color: #2a2a2a; /* Darkest shade of grey */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    text-decoration: underline wavy #909090 1px;
+    
+}
+.speciallybuttonkeliye:hover{
+    color:#909090
+}
+
+/* Button styles */
+.linkstyle {
+    font-family: 'cutive_monoregular', sans-serif;
+    font-size: 16px;
+    color: #2a2a2a; /* Darkest shade of grey */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/* Underline hover animation */
 .linkstyle::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -5px; /* Adjust space between text and underline */
-        width: 0;
-        height: 2px; /* Thickness of the underline */
-        background: lightgrey;
-        transition: width 0.3s ease; /* Smooth animation for underline */
-      }
-      
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #909090; /* Same color as the text */
+    transition: width 0.6s ease; /* Adjust speed (e.g., 0.6s) */
+    position: absolute;
+    bottom: -3px; /* Position underline slightly below text */
+    left: 0;
+}
+.linkstyle:hover {
+    color: #909090; /* Change text color on hover */
+}
+
 .linkstyle:hover::after {
-        width: 100%;
-      }
+    width: 100%; /* Full width on hover */
+}
       
 .bodyKeLiye{
-        font-family: 'minimal_monoregular';
+        font-family: 'cutive_monoregular';
         font-size: 16px;
-        color: #666666;
+        color: #737373;
         font-weight: normal;
         font-style: normal;
 }
 
 .headingKeLiye{
-        font-family: 'minimal_monobold';
+        font-family: 'rubiklight';
         font-size: 20px;
         color: #404040;
-        font-weight: normal;
+        font-weight: bolder;
         font-style: normal;
 }
 
@@ -56,76 +76,50 @@ button{
     }
     
 
+    /* Social Media Tray Style */
+.social-media-tray {
+    opacity: 0; /* Start hidden */
+    display: none; /* Initially not rendered */
+    transition: opacity 0.5s ease; /* Smooth fade effect */
+}
+
+    /* Flexbox styling for icons */
+    .social-media-icons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Icons styling */
+    .social-media-icons a {
+        display: inline-block;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    .social-media-icons a:hover {
+        opacity: 0.7;
+    }
+
+
+
+    /*  #  CUSTOM FONTS     */
 
 @font-face {
-        font-family: 'feature_monobold';
-        src: url('/Fonts/featuremono-bold-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'feature_monohairline';
-        src: url('/Fonts/featuremono-hairline-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-hairline-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'feature_monolight';
-        src: url('/Fonts/featuremono-light-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-light-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'feature_monomedium';
-        src: url('/Fonts/featuremono-medium-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-medium-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'feature_monoregular';
-        src: url('/Fonts/featuremono-regular-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'feature_monothin';
-        src: url('/Fonts/featuremono-thin-webfont.woff2') format('woff2'),
-             url('/Fonts/featuremono-thin-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'minimal_monoblack';
-        src: url('/Fonts/minimal-mono-black-webfont.woff2') format('woff2'),
-             url('/Fonts/minimal-mono-black-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'minimal_monobold';
-        src: url('/Fonts/minimal-mono-bold-webfont.woff2') format('woff2'),
-             url('/Fonts/minimal-mono-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'minimal_monoregular';
-        src: url('/Fonts/minimal-mono-regular-webfont.woff2') format('woff2'),
-             url('/Fonts/minimal-mono-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
+    font-family: 'cutive_monoregular';
+    src: url('Fonts/cutivemono-regular-webfont.woff2') format('woff2'),
+         url('Fonts/cutivemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('Fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('Fonts/rubik-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
