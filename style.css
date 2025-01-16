@@ -1,0 +1,131 @@
+button{
+        font-style : 'minimal_monobold';
+}
+
+.linkstyle{
+        border: none;
+        background: none;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+        transition: color 0.3s ease; /* Smooth color transition */
+      }
+      
+.linkstyle:hover {
+        color: lightgrey;
+      }
+      
+      /* Add the underline effect */
+.linkstyle::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Adjust space between text and underline */
+        width: 0;
+        height: 2px; /* Thickness of the underline */
+        background: lightgrey;
+        transition: width 0.3s ease; /* Smooth animation for underline */
+      }
+      
+.linkstyle:hover::after {
+        width: 100%;
+      }
+      
+.bodyKeLiye{
+        font-family: 'minimal_monoregular';
+        font-size: 16px;
+        color: #666666;
+        font-weight: normal;
+        font-style: normal;
+}
+
+.headingKeLiye{
+        font-family: 'minimal_monobold';
+        font-size: 20px;
+        color: #404040;
+        font-weight: normal;
+        font-style: normal;
+}
+
+::selection {
+        background-color: #bbf7d0; /* Highlight background color */
+        color: #000000;           /* Text color */
+    }
+    
+
+
+@font-face {
+        font-family: 'feature_monobold';
+        src: url('/Fonts/featuremono-bold-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'feature_monohairline';
+        src: url('/Fonts/featuremono-hairline-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-hairline-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'feature_monolight';
+        src: url('/Fonts/featuremono-light-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'feature_monomedium';
+        src: url('/Fonts/featuremono-medium-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'feature_monoregular';
+        src: url('/Fonts/featuremono-regular-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'feature_monothin';
+        src: url('/Fonts/featuremono-thin-webfont.woff2') format('woff2'),
+             url('/Fonts/featuremono-thin-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'minimal_monoblack';
+        src: url('/Fonts/minimal-mono-black-webfont.woff2') format('woff2'),
+             url('/Fonts/minimal-mono-black-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'minimal_monobold';
+        src: url('/Fonts/minimal-mono-bold-webfont.woff2') format('woff2'),
+             url('/Fonts/minimal-mono-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'minimal_monoregular';
+        src: url('/Fonts/minimal-mono-regular-webfont.woff2') format('woff2'),
+             url('/Fonts/minimal-mono-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
